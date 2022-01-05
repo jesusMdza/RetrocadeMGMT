@@ -1,14 +1,45 @@
+import React, { useState, useEffect } from 'react';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useFonts, SpaceMono_400Regular, SpaceMono_700Bold } from '@expo-google-fonts/space-mono';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import AppLoading from 'expo-app-loading';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import Home from './src/screens/Home/Home';
+import Scan from './src/screens/Scan/Scan';
+
+const Stack = createNativeStackNavigator();
+
+const App = () => {
+  let [fontsLoaded] = useFonts({
+    SpaceMono_400Regular,
+    SpaceMono_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator 
+          tabBar={props => <NavigationBar {...props} />}
+          screenOptions={({ route }) => ({
+            headerShown: false,
+            tabBarStyle: { background: 'transparent', backgroundColor: '#0f1421', position: 'absolute', bottom: 10, border: 'none', }
+          })}
+        >
+          <Stack.Screen name="Home">
+            { props => <Home {...props} /> }
+          </Stack.Screen>
+          <Stack.Screen name="Scan">
+            { props => <Scan {...props} /> }
+          </Stack.Screen> 
+        </Stack.Navigator>
+        <StatusBar style="light" />
+      </NavigationContainer>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -19,3 +50,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
