@@ -131,7 +131,9 @@ const styles = StyleSheet.create({
   placeholder: {
     color: '#8B8B8D',
     fontSize: 15,
-    marginLeft: 14
+    marginLeft: 14,
+    fontFamily: 'SpaceMono_700Bold',
+    letterSpacing: -.24
   },
   sort: {
     flexDirection: 'row',

@@ -1,12 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Text, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 
 import Row from './Row/Row';
 
 const UserList = ({ userData }) => {
-  console.log("this is the user data");
-  console.log(userData);
-
   return (
     <View>
       <FlatList 
@@ -17,6 +14,7 @@ const UserList = ({ userData }) => {
             firstName={item.firstName} 
             lastName={item.lastName} 
             email={item.email} 
+            imageName={item.imageName}
             isCheckedIn={item.isCheckedIn} 
           />
         )}

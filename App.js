@@ -26,9 +26,7 @@ const App = () => {
 
   const fetchData = () => {
     let userData;
-
     userData = Object.keys(fakeUserData).map(key => { return fakeUserData[key] });
-
     setUserData(userData);
   }
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 
-const Row = ({ firstName, lastName, email, isCheckedIn }) => {
+import UserProfileImage from '../../../data/UserProfileImage';
+
+const Row = ({ firstName, lastName, email, imageName, isCheckedIn }) => {
   return (
     <View style={styles.view}>
       <View style={styles.row}>
-        <Image style={styles.profileImage} source={require('../../../assets/janet_johnson.png')} />
+        <Image style={styles.profileImage} source={UserProfileImage[imageName]} />
         <View style={styles.memberText}>
           <Text style={styles.nameText}>{`${firstName} ${lastName}`}</Text>
           <Text style={styles.emailText}>{email}</Text>

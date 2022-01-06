@@ -4,6 +4,7 @@
     "firstName": "Janet",
     "lastName": "Johnson",
     "email": "janet.johnson@email.com",
+    "imageName": "janet_johnson",
     "isCheckedIn": false
   },
   {
@@ -11,6 +12,7 @@
     "firstName": "Michael",
     "lastName": "Kowani",
     "email": "michael.is.dope@email.com",
+    "imageName": "michael_kowani",
     "isCheckedIn": false
   },
   {
@@ -18,6 +20,7 @@
     "firstName": "Nicholas F.",
     "lastName": "Firestar",
     "email": "nic12440zadopey@email.com",
+    "imageName": "nicholas_f_firestar",
     "isCheckedIn": false
   },
   {
@@ -25,6 +28,7 @@
     "firstName": "Nicole",
     "lastName": "Hoffman",
     "email": "niccy.hoff@email.com",
+    "imageName": "nicole_hoffman",
     "isCheckedIn": false
   },
   {
@@ -32,6 +36,7 @@
     "firstName": "Piper",
     "lastName": "Pilsun",
     "email": "piper.pilsun@email.com",
+    "imageName": "piper_pilsun",
     "isCheckedIn": false
   },
   {
@@ -39,6 +44,7 @@
     "firstName": "Renee",
     "lastName": "Michael",
     "email": "renee.michaels114@email.com",
+    "imageName": "renee_michael",
     "isCheckedIn": true
   },
   {
@@ -46,6 +52,7 @@
     "firstName": "Zeta",
     "lastName": "Avery",
     "email": "zeta.4eva@email.com",
+    "imageName": "zeta_avery",
     "isCheckedIn": true
   },
   {
@@ -53,6 +60,7 @@
     "firstName": "Zara",
     "lastName": "Mikato",
     "email": "zora.mikato@email.com",
+    "imageName": "zora_mikato",
     "isCheckedIn": false
   }
 ]
