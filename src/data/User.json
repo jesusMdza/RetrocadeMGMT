@@ -1,0 +1,58 @@
+[
+  {
+    "id": 23882190,
+    "firstName": "Janet",
+    "lastName": "Johnson",
+    "email": "janet.johnson@email.com",
+    "isCheckedIn": false
+  },
+  {
+    "id": 23882191,
+    "firstName": "Michael",
+    "lastName": "Kowani",
+    "email": "michael.is.dope@email.com",
+    "isCheckedIn": false
+  },
+  {
+    "id": 23882192,
+    "firstName": "Nicholas F.",
+    "lastName": "Firestar",
+    "email": "nic12440zadopey@email.com",
+    "isCheckedIn": false
+  },
+  {
+    "id": 23882193,
+    "firstName": "Nicole",
+    "lastName": "Hoffman",
+    "email": "niccy.hoff@email.com",
+    "isCheckedIn": false
+  },
+  {
+    "id": 23882194,
+    "firstName": "Piper",
+    "lastName": "Pilsun",
+    "email": "piper.pilsun@email.com",
+    "isCheckedIn": false
+  },
+  {
+    "id": 23882195,
+    "firstName": "Renee",
+    "lastName": "Michael",
+    "email": "renee.michaels114@email.com",
+    "isCheckedIn": true
+  },
+  {
+    "id": 23882196,
+    "firstName": "Zeta",
+    "lastName": "Avery",
+    "email": "zeta.4eva@email.com",
+    "isCheckedIn": true
+  },
+  {
+    "id": 23882197, 
+    "firstName": "Zara",
+    "lastName": "Mikato",
+    "email": "zora.mikato@email.com",
+    "isCheckedIn": false
+  }
+]
