@@ -14,7 +14,7 @@ const Row = ({ firstName, lastName, email, imageName, isCheckedIn }) => {
         </View>
       </View>
       <View style={styles.row}>
-        <View style={isCheckedIn ? styles.checkedInstatusBar : styles.offlineStatusBar}>
+        <View style={isCheckedIn ? styles.checkedInStatusPill : styles.offlineStatusPill}>
           <View style={isCheckedIn ? styles.checkedInCircle : styles.offlineCircle} />
           <Text style={styles.statusText}>{isCheckedIn ? 'Checked In' : 'Offline'}</Text>
         </View>
@@ -44,11 +44,14 @@ const styles = StyleSheet.create({
     height: 56,
     borderRadius: 4,
     marginRight: 26
-  }, 
+  },
+  memberText: {
+    marginBottom: 1
+  },
   nameText: {
     color: '#fff',
     fontSize: 16,
-    fontFamily: 'SpaceMono_700Bold'
+    fontFamily: 'SpaceMono_700Bold',
   },
   emailText: {
     color: '#fff',
@@ -69,23 +72,25 @@ const styles = StyleSheet.create({
     backgroundColor: '#B9BEC4',
     marginRight: 6
   },
-  checkedInstatusBar: {
+  checkedInStatusPill: {
     justifyContent: 'center',
     width: 112,
     height: 30,
     flexDirection: 'row',
     alignItems: 'center',
-    marginRight: 38 ,
+    marginRight: 38,
+    marginBottom: 1,
     backgroundColor: '#383F19',
     borderRadius: 36
   },
-  offlineStatusBar: {
+  offlineStatusPill: {
     justifyContent: 'center',
     width: 112,
     height: 30,
     flexDirection: 'row',
     alignItems: 'center',
-    marginRight: 38 ,
+    marginRight: 38,
+    marginBottom: 1,
     backgroundColor: '#222226',
     borderRadius: 36
   },

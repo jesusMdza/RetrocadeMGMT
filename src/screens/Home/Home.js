@@ -1,9 +1,12 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 
-import UserList from '../../components/UserList/UserList'
+import UserList from '../../components/UserList/UserList';
 
-const Home = ({ userData }) => {
+const Home = ({ navigation, userData }) => {
+  console.log("HOME IS RENDERED");
+  console.log(navigation);
+
   return (
     <View style={styles.view}>
       <View style={styles.navigationBar}>
@@ -12,7 +15,10 @@ const Home = ({ userData }) => {
           <Image style={styles.boltIcon} source={require('../../assets/bolt.png')} />
           <Image style={styles.speedometerIcon} source={require('../../assets/speedometer.png')} />
           <Image style={styles.plusIcon} source={require('../../assets/plus.png')} />
-          <TouchableOpacity style={styles.scanButton}>
+          <TouchableOpacity 
+            style={styles.scanButton} 
+            onPress={() => navigation.navigate('Scan')}
+          >
             <Image style={styles.scanIcon} source={require('../../assets/scan.png')} />
             <Text style={[styles.scanButtonText, styles.letterSpacing]}>Check In</Text>
           </TouchableOpacity>
